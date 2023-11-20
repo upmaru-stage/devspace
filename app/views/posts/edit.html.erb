@@ -1,0 +1,3 @@
+<%= render partial: "form", locals: { post: @post, title: "Edit Post", description: "Edit #{@post.title}" } %>
+
+<%= button_to "Delete", @post, method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600" %>
