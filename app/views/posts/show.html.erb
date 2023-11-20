@@ -4,10 +4,14 @@
   <%= link_to "Edit", edit_post_path(@post) if user_signed_in? %>
 </div>
 <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"><%= @post.title %></h1>
-<div class="mt-10 flex items-center justify-center gap-x-6">
-</div>
-<div class="mt-10 max-w-2xl">
-  <div class="prose">
-    <%= @post.body %>
-  </div>
+<% if @post.cover_image.present? %>
+<figure class="mt-10">
+  <%= image_tag @post.cover_image, class: "aspect-video rounded-xl bg-gray-50 object-cover"  %>
+</figure>
+<% end %>
+<p class="mt-6 text-xl leading-8">
+  <%= @post.blurb %>
+</p>
+<div class="mt-10">
+  <%= @post.content %>
 </div>
