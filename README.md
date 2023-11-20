@@ -1,24 +1,11 @@
-# README
+# devspace
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample rails project for Opsmaru.com
 
-Things you may want to cover:
++ Ruby: 3.2.2
++ Rails: 7.1
++ DB: Postgresql
++ Worker: GoodJob
++ Upload: ActiveStorage
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Built to demonstrate deployment using Opsmaru
