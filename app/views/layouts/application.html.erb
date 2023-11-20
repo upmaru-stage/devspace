@@ -15,10 +15,10 @@
     <main class="bg-white px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <% if notice %>
-          <%= render partial: "notice", locals: { message: notice, color: "blue" } %>
+          <%= render partial: "notice", locals: { message: notice, background: "bg-blue-50", text: "text-blue-700", icon: "text-blue-400" } %>
         <% end %>
         <% if alert %> 
-          <%= render partial: "notice", locals: { message: alert, color: "yellow" } %>
+          <%= render partial: "notice", locals: { message: alert, background: "bg-yellow-50", text: "text-yellow-700", icon: "text-yellow-400" } %>
         <% end %>
         <% if user_signed_in? %>
           <div class="bg-white">
