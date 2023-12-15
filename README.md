@@ -6,7 +6,7 @@ Sample rails project for Opsmaru.com
 + Rails: 7.1
 + DB: Postgresql
 + Worker: GoodJob
-+ Upload: ActiveStorage
++ Upload: ActiveStorage using S3
 
 Built to demonstrate deployment using Opsmaru's features. Things this will demonstrate
 
