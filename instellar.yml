@@ -57,7 +57,7 @@ run:
       call: console
       name: console
     - binary: tail
-      call: -f -n 100 /var/logs/devspace/current
+      call: -f -n 100 /var/log/devspace/current
       name: logs
       path: /usr/bin
   name: devspace
