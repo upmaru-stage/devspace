@@ -73,3 +73,4 @@ end
 
 gem "devise", "~> 4.9"
 gem "good_job", "~> 3.21"
+gem "aws-sdk-s3", "~> 1"
