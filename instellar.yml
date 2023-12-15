@@ -4,8 +4,8 @@ dependencies:
     - ruby-bundler
     - ruby-dev
     - ruby-tzinfo
-    - yaml-dev
     - libpq-dev
+    - yaml-dev
     - vips-dev
   runtime:
     - bash
