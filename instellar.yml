@@ -4,8 +4,8 @@ dependencies:
     - ruby-bundler
     - ruby-dev
     - ruby-tzinfo
-    - libpq-dev
     - yaml-dev
+    - libpq-dev
     - vips-dev
   runtime:
     - bash
@@ -27,9 +27,9 @@ build:
   command: |
     bundle config set deployment 'true'
     bundle config set without 'development test'
-    
+
     bundle install
-    
+
     bundle exec rails assets:precompile
   destinations:
     - '*'
