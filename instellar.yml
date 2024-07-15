@@ -71,6 +71,12 @@ run:
       start:
         call: exec good_job start
 
+sizes:
+  - name: medium
+    allocation:
+      cpu: 1
+      memory: 1
+
 kits:
   - description: web service
     forks:
