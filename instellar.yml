@@ -82,11 +82,13 @@ kits:
     forks:
       - description: GoodJob worker
         name: good-job
+        default_size: medium
         variables:
           - default_value: good-job
             key: SERVICE_MODE
     main: true
     name: web
+    default_size: medium
     ports:
       - main: true
         name: web
