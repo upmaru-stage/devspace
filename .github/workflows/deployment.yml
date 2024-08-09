@@ -1,4 +1,4 @@
-name: 'Deployment'
+name: "Deployment"
 
 on:
   push:
@@ -12,14 +12,14 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout'
+      - name: "Checkout"
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Setup Pakman
-        uses: upmaru/pakman@v8
+        uses: upmaru/pakman@develop
         with:
           alpine: v3.18
 
@@ -31,7 +31,7 @@ jobs:
           ABUILD_PRIVATE_KEY: ${{secrets.ABUILD_PRIVATE_KEY}}
           ABUILD_PUBLIC_KEY: ${{secrets.ABUILD_PUBLIC_KEY}}
 
-      - name: 'Build Package'
+      - name: "Build Package"
         run: |
           cd "$GITHUB_WORKSPACE"/.apk/"$GITHUB_REPOSITORY" || exit
 
@@ -49,16 +49,16 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - uses: actions/download-artifact@v4
-        with: 
+        with:
           path: /home/runner/artifacts
 
       - name: Setup Pakman
-        uses: upmaru/pakman@v8
+        uses: upmaru/pakman@develop
         with:
           alpine: v3.18
 

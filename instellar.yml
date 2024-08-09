@@ -27,12 +27,12 @@ build:
   command: |
     bundle config set deployment 'true'
     bundle config set without 'development test'
-    
+
     bundle install
-    
+
     bundle exec rails assets:precompile
   destinations:
-    - '*'
+    - "*"
     - .bundle
 
 hook:
@@ -96,7 +96,7 @@ kits:
     variables:
       - default_value: production
         key: RAILS_ENV
-      - default_value: '1'
+      - default_value: "1"
         key: RAILS_SERVE_STATIC_FILES
       - driver: generic/secret
         driver_options:
@@ -124,3 +124,13 @@ kits:
               }
             ]
         key: AWS_S3
+
+plans:
+  - name: basic
+    description: "Basic plan"
+    layers: [{ channel_slug: develop, kit_slug: web, size_slug: medium }]
+    pricings:
+      [
+        { amount: 35_00, currency: USD, billing_period: monthly },
+        { amount: 350_00, currency: USD, billing_period: yearly },
+      ]
