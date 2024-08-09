@@ -131,6 +131,6 @@ plans:
     layers: [{ channel_slug: develop, kit_slug: web, size_slug: medium }]
     pricings:
       [
-        { amount: 35_00, currency: USD, billing_period: monthly },
-        { amount: 350_00, currency: USD, billing_period: yearly },
+        { amount: 3500, currency: USD, billing_period: monthly },
+        { amount: 35000, currency: USD, billing_period: yearly },
       ]
