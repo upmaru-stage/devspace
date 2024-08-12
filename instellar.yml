@@ -128,7 +128,7 @@ kits:
 plans:
   - name: basic
     description: "Basic plan"
-    layers: [{ channel_slug: develop, kit_slug: web, size_slug: medium }]
+    layers: [{ channel_slug: develop, kit_slug: web, size_slug: invalid }]
     pricings:
       [
         { amount: 3500, currency: USD, billing_period: monthly },
