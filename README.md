@@ -14,3 +14,4 @@ Built to demonstrate deployment using Opsmaru's features. Things this will demon
 + Automatic database provisioning
 + Automatic redis provisioning
 + Automatic bucket provisioning
++ Deploy worker as a separate installation
