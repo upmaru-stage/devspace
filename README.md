@@ -2,7 +2,7 @@
 
 Sample rails project for Opsmaru.com
 
-+ Ruby: 3.2.2
++ Ruby: 3.2.4
 + Rails: 7.1
 + DB: Postgresql
 + Worker: GoodJob
