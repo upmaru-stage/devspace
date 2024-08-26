@@ -95,6 +95,8 @@ kits:
         name: web
         target: 3000
     variables:
+      - key: TEST_REQUIRED_VAR
+        required: true
       - default_value: production
         key: RAILS_ENV
         required: true
