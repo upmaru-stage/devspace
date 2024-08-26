@@ -86,6 +86,7 @@ kits:
         variables:
           - default_value: good-job
             key: SERVICE_MODE
+            required: true
     main: true
     name: web
     default_size: medium
@@ -96,14 +97,18 @@ kits:
     variables:
       - default_value: production
         key: RAILS_ENV
+        required: true
       - default_value: "1"
         key: RAILS_SERVE_STATIC_FILES
+        required: true
       - driver: generic/secret
         driver_options:
           length: 128
         key: SECRET_KEY_BASE
+        required: true
       - driver: database/postgresql
         key: DATABASE
+        required: true
       - driver: bucket/aws-s3
         driver_options:
           cors: |
@@ -124,6 +129,7 @@ kits:
               }
             ]
         key: AWS_S3
+        required: true
 
 plans:
   - name: basic
