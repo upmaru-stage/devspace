@@ -140,3 +140,13 @@ plans:
         { amount: 3500, currency: USD, billing_period: monthly },
         { amount: 35000, currency: USD, billing_period: yearly },
       ]
+
+page:
+  title: DevSpace
+  slogan: "Unleash your inner developer"
+  description: |
+    ## Blogs for Developers
+
+    Devspace is a blog designed for developers. You can write blog posts and show case your work to the world.
+
+    Use a beautiful markdown editor to update your blog posts.
