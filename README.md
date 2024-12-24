@@ -16,3 +16,8 @@ Built to demonstrate deployment using Opsmaru's features. Things this will demon
 + Automatic bucket provisioning
 + Deploy worker as a separate installation
 + Deploying a rails app with a worker
+
+## Features
+
++ Basic blog
++ User authentication
