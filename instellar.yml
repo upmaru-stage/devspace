@@ -4,8 +4,8 @@ dependencies:
     - ruby-bundler
     - ruby-dev
     - ruby-tzinfo
-    - libpq-dev
     - yaml-dev
+    - libpq-dev
     - vips-dev
   runtime:
     - bash
@@ -21,7 +21,7 @@ dependencies:
     - vips
     - devspace-openrc
 
-stack: alpine/3.18
+stack: alpine/3.19
 
 build:
   command: |
